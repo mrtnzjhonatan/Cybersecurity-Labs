@@ -1,4 +1,8 @@
-### 🎮 [Hangman Game](scripts/hangman-game)
+## 🗂️ Projects
 
-A command-line Pokémon Hangman game written in Python. Includes category hints, ASCII art, and robust input handling.
+### 🎮 [Hangman Game](Pokemon-hangman-game-python)
+
+A Pokémon-themed Hangman game built with Python. Demonstrates control flow, ASCII graphics, input validation, and replay functionality.
+
+
 
