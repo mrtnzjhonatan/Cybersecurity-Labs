@@ -97,5 +97,8 @@ I am actively advancing my cybersecurity knowledge through [Hack The Box Academy
 | [Badge](https://academy.hackthebox.com/achievement/badge/e64d731f-9d42-11ee-bfb6-bea50ffe6cb4) | Everything is connected -  Introduction to Networking      |
 | [Badge](https://academy.hackthebox.com/achievement/badge/5ba05891-33d9-11ee-acfc-bea50ffe6cb4) | Snake Charmer -  Introduction to Python 3                  |
 
+### 🎮 [Hangman Game](Pokemon-hangman-game-python)
+
+A command-line Pokémon Hangman game written in Python. Includes category hints, ASCII art, and robust input handling.
 
 ---
